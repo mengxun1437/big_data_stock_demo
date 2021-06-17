@@ -1,0 +1,2 @@
+# big_data_ststock_demo
+大数据开发实践课程期末大作业，基于PyQt5将股票查询做了一个简单的GUI demo版本
