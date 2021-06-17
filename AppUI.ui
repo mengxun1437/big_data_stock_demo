@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>BigData</class>
+    <widget class="QMainWindow" name="BigData">
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1517</width>
+                <height>896</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>大数据-大作业-GUI版</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <widget class="QTabWidget" name="tabs">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>60</y>
+                        <width>1001</width>
+                        <height>811</height>
+                    </rect>
+                </property>
+                <property name="locale">
+                    <locale language="Chinese" country="China"/>
+                </property>
+                <property name="currentIndex">
+                    <number>6</number>
+                </property>
+                <widget class="QWidget" name="_14_2_1_1">
+                    <attribute name="title">
+                        <string>14.2.1-1</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>131</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>71</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="current_date_edit_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>280</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>25</y>
+                                    <width>41</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>日期:</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_2">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="total_vol_0">
+                            <property name="geometry">
+                                <rect>
+                                    <x>260</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>200</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>总成交量：</string>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_2_1_2">
+                    <attribute name="title">
+                        <string>14.2.1-2</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_4">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="start_date_edit_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>390</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>330</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>开始日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票名称：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="stock_name_edit_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>520</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>结束日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="end_date_edit_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>580</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_6">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_2_2">
+                    <attribute name="title">
+                        <string>14.2.2</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_7">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_5">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="start_date_edit_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>390</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>330</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>开始日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票名称：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="stock_name_edit_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>520</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>结束日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="end_date_edit_2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>580</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_2_3">
+                    <attribute name="title">
+                        <string>14.2.3</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_8">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>180</x>
+                                    <y>30</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>相关系数r1：</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="correlation_num_3_r1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>250</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>540</x>
+                                    <y>30</y>
+                                    <width>71</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>相关系数r2：</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="correlation_num_3_r2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>620</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_10">
+                            <property name="geometry">
+                                <rect>
+                                    <x>350</x>
+                                    <y>30</y>
+                                    <width>81</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>显著性水平p1:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="correlation_num_3_p1">
+                            <property name="geometry">
+                                <rect>
+                                    <x>440</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_11">
+                            <property name="geometry">
+                                <rect>
+                                    <x>720</x>
+                                    <y>30</y>
+                                    <width>81</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>显著性水平p2:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="correlation_num_3_p2">
+                            <property name="geometry">
+                                <rect>
+                                    <x>810</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_9">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="start_date_edit_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>390</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>330</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>开始日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票名称：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="stock_name_edit_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>520</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>结束日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="end_date_edit_3">
+                            <property name="geometry">
+                                <rect>
+                                    <x>580</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_3">
+                    <attribute name="title">
+                        <string>14.2.4 - 14.3</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_11">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_12">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_10">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="start_date_edit_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>390</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_7">
+                            <property name="geometry">
+                                <rect>
+                                    <x>330</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>开始日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询并绘制</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票名称：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="stock_name_edit_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_8">
+                            <property name="geometry">
+                                <rect>
+                                    <x>520</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>结束日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="end_date_edit_4">
+                            <property name="geometry">
+                                <rect>
+                                    <x>580</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_4_1">
+                    <attribute name="title">
+                        <string>14.4.1</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_12">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_13">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>191</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>保存结果(1代表成功/0代表失败):</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="save_status_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>210</x>
+                                    <y>25</y>
+                                    <width>31</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="smallDecimalPoint">
+                                <bool>true</bool>
+                            </property>
+                            <property name="digitCount">
+                                <number>1</number>
+                            </property>
+                            <property name="mode">
+                                <enum>QLCDNumber::Dec</enum>
+                            </property>
+                            <property name="value" stdset="0">
+                                <double>0.000000000000000</double>
+                            </property>
+                            <property name="intValue" stdset="0">
+                                <number>0</number>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_13">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="sheet_name_edit_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>sheet名：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="save_button_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>820</x>
+                                    <y>20</y>
+                                    <width>88</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>保存</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>41</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>A1值：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="a1_value_edit_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>210</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>310</x>
+                                    <y>25</y>
+                                    <width>51</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>文件名：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="file_name_edit_5">
+                            <property name="geometry">
+                                <rect>
+                                    <x>360</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="_14_4_2">
+                    <attribute name="title">
+                        <string>14.4.2</string>
+                    </attribute>
+                    <widget class="QGroupBox" name="groupBox_14">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>951</width>
+                                <height>681</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>结果</string>
+                        </property>
+                        <widget class="QLabel" name="search_tip_label_14">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>30</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询总数:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="search_num_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>81</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="digitCount">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="label_7">
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>60</y>
+                                    <width>72</width>
+                                    <height>15</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询结果：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTableView" name="search_table_result_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>80</y>
+                                    <width>931</width>
+                                    <height>591</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="search_tip_label_15">
+                            <property name="geometry">
+                                <rect>
+                                    <x>180</x>
+                                    <y>30</y>
+                                    <width>191</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>保存结果(1代表成功/0代表失败):</string>
+                            </property>
+                        </widget>
+                        <widget class="QLCDNumber" name="save_status_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>370</x>
+                                    <y>25</y>
+                                    <width>31</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="smallDecimalPoint">
+                                <bool>true</bool>
+                            </property>
+                            <property name="digitCount">
+                                <number>1</number>
+                            </property>
+                            <property name="mode">
+                                <enum>QLCDNumber::Dec</enum>
+                            </property>
+                            <property name="value" stdset="0">
+                                <double>0.000000000000000</double>
+                            </property>
+                            <property name="intValue" stdset="0">
+                                <number>0</number>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" name="groupBox_15">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>951</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="locale">
+                            <locale language="English" country="UnitedStates"/>
+                        </property>
+                        <property name="title">
+                            <string>操作</string>
+                        </property>
+                        <widget class="QTextEdit" name="stock_code_edit_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票代码:</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="start_date_edit_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>390</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_9">
+                            <property name="geometry">
+                                <rect>
+                                    <x>330</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>开始日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="search_button_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>787</x>
+                                    <y>20</y>
+                                    <width>121</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>查询 绘制 保存</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="stock_code_label_1_7">
+                            <property name="geometry">
+                                <rect>
+                                    <x>170</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>股票名称：</string>
+                            </property>
+                        </widget>
+                        <widget class="QTextEdit" name="stock_name_edit_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>20</y>
+                                    <width>81</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" name="current_date_label_10">
+                            <property name="geometry">
+                                <rect>
+                                    <x>520</x>
+                                    <y>25</y>
+                                    <width>61</width>
+                                    <height>16</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>结束日期：</string>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit" name="end_date_edit_6">
+                            <property name="geometry">
+                                <rect>
+                                    <x>580</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QLabel" name="title_label">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>30</y>
+                        <width>161</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>大数据期末大作业GUI版</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_3">
+                <property name="geometry">
+                    <rect>
+                        <x>1060</x>
+                        <y>70</y>
+                        <width>431</width>
+                        <height>801</height>
+                    </rect>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="title">
+                    <string>控制台日志</string>
+                </property>
+                <widget class="QTextEdit" name="console_log_info">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>411</width>
+                            <height>761</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
