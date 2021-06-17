@@ -23,13 +23,13 @@
 
   ![运行方法1](http://qiniu.mengxun.online/20210618020301.png)
 
-- 在项目目录下执行 ``` pyinstaller -F .\GUI.spec```执行完成后，dist目录下会生成exe可执行文件
+- 在项目目录下执行 ` pyinstaller -F .\GUI.spec`执行完成后，dist 目录下会生成 exe 可执行文件
 
   ![运行方法2-1](http://qiniu.mengxun.online/20210618022401.png)
-  
+
   ![运行方法2-2](http://qiniu.mengxun.online/20210618020427.png)
-  
-- github私信联系我，发exe文件 
+
+- github 私信联系我，发 exe 文件
 
 # 实验截图
 
