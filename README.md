@@ -28,16 +28,13 @@ pip install pyqt5-tools
 pip install pyinstaller
 ```
 
-
-
-
 # 运行方法
 
 - 进入到项目文件夹下,执行 GUI.py 文件
 
   ![运行方法1](http://qiniu.mengxun.online/20210618020301.png)
 
-- 修改项目目录下GUI.spec中的绝对路径路径 在项目目录下执行 ` pyinstaller -F .\GUI.spec`执行完成后，dist 目录下会生成 exe 可执行文件
+- 修改项目目录下 GUI.spec 中的绝对路径路径 在项目目录下执行 ` pyinstaller -F .\GUI.spec`执行完成后，dist 目录下会生成 exe 可执行文件
 
 - ![运行方法2-1](http://qiniu.mengxun.online/20210618223153.png)
 
@@ -45,10 +42,10 @@ pip install pyinstaller
 
   ![运行方法2-3](http://qiniu.mengxun.online/20210618020427.png)
 
-- EXE文件网盘链接
+- EXE 文件网盘链接
 
-  链接：https://pan.baidu.com/s/1j-N5_7vSkN75H_fH1GS6Ng 
-  提取码：yhyo 
+  链接：https://pan.baidu.com/s/1j-N5_7vSkN75H_fH1GS6Ng
+  提取码：yhyo
 
 # 实验截图
 
